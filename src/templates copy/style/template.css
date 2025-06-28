@@ -1,0 +1,28 @@
+.A4Page {
+  width: 210mm;
+  height: 297mm;
+  /* padding: 20mm; */
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  transform-origin: top left;
+  transform: scale(var(--scale-factor, 1));
+}
+
+/* Print optimization */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .A4Page {
+    transform: scale(1);
+    box-shadow: none;
+    page-break-after: always;
+  }
+
+  .previewContainer {
+    display: none; /* Hide preview on print */
+  }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.text-bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.A4Page {
+  width: 210mm;
+  height: 297mm;
+  /* padding: 20mm; */
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  transform-origin: top left;
+  transform: scale(var(--scale-factor, 1));
+}
+
+/* .zIndex-1{
+  z-index: 0;
+} */
+
+/* Print optimization */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .A4Page {
+    transform: scale(1);
+    box-shadow: none;
+    page-break-after: always;
+  }
+
+  .previewContainer {
+    display: none; /* Hide preview on print */
+  }
+}

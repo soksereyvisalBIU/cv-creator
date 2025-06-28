@@ -1,0 +1,17 @@
+
+.aspect-ratio {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0; /* Example background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #333; /* Example text color */
+}
+
+.A4-container {
+    width: 100%;
+    aspect-ratio: 210 / 297;
+}
