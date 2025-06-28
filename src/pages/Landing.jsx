@@ -20,7 +20,7 @@ const Landing = () => {
   }, []);
 
   return (
-    <div className="bg-[#FFFFFF] min-h-screen max-h-screen overflow-hidden">
+    <div className="bg-[#FFFFFF] min-h-screen max-h-screen max-w-screen overflow-hidden">
       {/* <div className="bg-[#FFFFFF] min-h-screen flex items-center justify-center overflow-hidden relative"> */}
       <motion.div
         initial={{ opacity: 0 }}
