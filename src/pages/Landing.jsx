@@ -61,13 +61,19 @@ const Landing = () => {
               </motion.div>
             </h1>
 
-            <div className="flex sm:hidden justify-center items-center">
-              <img
-                src="https://cdn.enhancv.com/localizedImages/544/i/aHR0cHM6Ly9jZG4uZW5oYW5jdi5jb20vcHJlZGVmaW5lZC1leGFtcGxlcy9zNmcwdjR0TXMzQmhab093RGRQMU05dUNtYmlPbnU0Rm13ckRibkx2L2ltYWdlLnBuZw~~.png"
-                alt=""
-                className="w-3/4 h-auto rounded"
-              />
-            </div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.3 }}
+                className="flex py-2 sm:py-0 sm:hidden justify-center items-center"
+              >
+                <img
+                  src="https://cdn.enhancv.com/localizedImages/544/i/aHR0cHM6Ly9jZG4uZW5oYW5jdi5jb20vcHJlZGVmaW5lZC1leGFtcGxlcy9zNmcwdjR0TXMzQmhab093RGRQMU05dUNtYmlPbnU0Rm13ckRibkx2L2ltYWdlLnBuZw~~.png"
+                  alt=""
+                  className="w-3/4 h-auto rounded shadow-lg "
+                />
+                {/* Loading... */}
+              </motion.div>
 
             <Link to={"/homepage"}>
               <button className="bg-black py-3 px-8 w-full sm:w-auto mt-2">
