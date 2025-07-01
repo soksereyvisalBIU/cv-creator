@@ -10,7 +10,6 @@ import Publications from "../component/form/Publications";
 import Workshops from "../component/form/Workshops";
 import Volunteer from "../component/form/Volunteers";
 import References from "../component/form/References";
-import { downloadTemplateAsPDF } from "../utils/pdfExport";
 // import { downloadTemplateAsPDF } from "../utils/pdfExport"; // adjust path
 
 import "../component/form/form-animations.css"; // Import animation CSS for slide transitions
@@ -149,15 +148,6 @@ function Form({ setFormData: setFormDataProp }) {
       setStep(0);
     }
   };
-
-    const handleExport = async () => {
-  
-      // Wait for DOM update
-      setTimeout(async () => {
-        await downloadTemplateAsPDF("A4paper", "resume.pdf");
-        // setMode("preview");
-      }, 300); // slight delay to allow layout/render
-    };
 
   return (
     <div id="form-swipe-container" className="">
@@ -330,12 +320,6 @@ function Form({ setFormData: setFormDataProp }) {
         </button>
         {/* <button onClick={() => downloadTemplateAsPDF()}>Download as PDF</button> */}
       </div>
-      <button
-        onClick={handleExport}
-        className="mt-4 bg-green-600 text-white px-4 py-2 rounded"
-      >
-        Export PDF
-      </button>
     </div>
   );
 }

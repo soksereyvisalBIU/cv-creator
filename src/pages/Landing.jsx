@@ -61,19 +61,19 @@ const Landing = () => {
               </motion.div>
             </h1>
 
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 0.3 }}
-                className="flex py-2 sm:py-0 sm:hidden justify-center items-center"
-              >
-                <img
-                  src="https://cdn.enhancv.com/localizedImages/544/i/aHR0cHM6Ly9jZG4uZW5oYW5jdi5jb20vcHJlZGVmaW5lZC1leGFtcGxlcy9zNmcwdjR0TXMzQmhab093RGRQMU05dUNtYmlPbnU0Rm13ckRibkx2L2ltYWdlLnBuZw~~.png"
-                  alt=""
-                  className="w-3/4 h-auto rounded shadow-lg "
-                />
-                {/* Loading... */}
-              </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className="flex py-2 sm:py-0 sm:hidden justify-center items-center"
+            >
+              <img
+                src="/cv/cv1.webp"
+                alt=""
+                className="w-3/4 h-auto rounded shadow-lg "
+              />
+              {/* Loading... */}
+            </motion.div>
 
             <Link to={"/homepage"}>
               <button className="bg-black py-3 px-8 w-full sm:w-auto mt-2">
@@ -104,22 +104,22 @@ const Landing = () => {
           >
             <div className="flex flex-col gap-2 md:gap-4 mt-[-100px] md:mt-[-300px]">
               <img
-                src="https://cdn.enhancv.com/localizedImages/544/i/aHR0cHM6Ly9jZG4uZW5oYW5jdi5jb20vcHJlZGVmaW5lZC1leGFtcGxlcy9zNmcwdjR0TXMzQmhab093RGRQMU05dUNtYmlPbnU0Rm13ckRibkx2L2ltYWdlLnBuZw~~.png"
+                src="/cv/cv1.webp"
                 alt=""
                 className="w-24 md:w-32 lg:w-40 xl:w-48 h-auto rounded shadow"
               />
               <img
-                src="https://cdn.prod.website-files.com/652e8c998f656fbf00cb7c99/662f9083bf9427e3755c7cbf_dMw7cf7rJN-photo.png"
+                src="/cv/cv2.webp"
                 alt=""
                 className="w-24 md:w-32 lg:w-40 xl:w-48 h-auto rounded shadow"
               />
               <img
-                src="https://gdoc.io/uploads/teacher-cv-free-google-docs-template-t-376x520.webp"
+                src="/cv/cv3.webp"
                 alt=""
                 className="w-24 md:w-32 lg:w-40 xl:w-48 h-auto rounded shadow"
               />
               <img
-                src="https://cdn.enhancv.com/localizedImages/544/i/aHR0cHM6Ly9jZG4uZW5oYW5jdi5jb20vcHJlZGVmaW5lZC1leGFtcGxlcy9zNmcwdjR0TXMzQmhab093RGRQMU05dUNtYmlPbnU0Rm13ckRibkx2L2ltYWdlLnBuZw~~.png"
+                src="/cv/cv4.webp"
                 alt=""
                 className="w-24 md:w-32 lg:w-40 xl:w-48 h-auto rounded shadow"
               />
@@ -135,22 +135,22 @@ const Landing = () => {
           >
             <div className="flex flex-col gap-2 md:gap-4 mt-[-50px] md:mt-[-150px]">
               <img
-                src="https://www.my-resume-templates.com/wp-content/uploads/2023/05/student-resume-example.jpg"
+                src="/cv/cv5.webp"
                 alt=""
                 className="w-24 md:w-32 lg:w-40 xl:w-48 h-auto rounded shadow"
               />
               <img
-                src="https://resumaker.ai/s3/en-US/cv-examples/Health-Professional-CV-Example.png"
+                src="/cv/cv6.webp"
                 alt=""
                 className="w-24 md:w-32 lg:w-40 xl:w-48 h-auto rounded shadow"
               />
               <img
-                src="https://www.cvmaker.com/assets/images/cvs/2/cv-example-harvard-3f6591.jpg"
+                src="/cv/cv7.webp"
                 alt=""
                 className="w-24 md:w-32 lg:w-40 xl:w-48 h-auto rounded shadow"
               />
               <img
-                src="https://www.my-resume-templates.com/wp-content/uploads/2023/05/student-resume-example.jpg"
+                src="/cv/cv8.webp"
                 alt=""
                 className="w-24 md:w-32 lg:w-40 xl:w-48 h-auto rounded shadow"
               />
@@ -166,22 +166,22 @@ const Landing = () => {
           >
             <div className="flex flex-col gap-2 md:gap-4">
               <img
-                src="https://standout-cv.com/wp-content/uploads/2021/01/University-Applicant-CV-1.png"
+                src="/cv/cv9.webp"
                 alt=""
                 className="w-24 md:w-32 lg:w-40 xl:w-48 h-auto rounded shadow"
               />
               <img
-                src="https://resumekraft.com/wp-content/uploads/2024/01/Undergraduate-Student-CV-Example.jpg"
+                src="/cv/cv1.webp"
                 alt=""
                 className="w-24 md:w-32 lg:w-40 xl:w-48 h-auto rounded shadow"
               />
               <img
-                src="https://www.micvideal.mx/wp-content/uploads/sites/5/2023/06/mx-cv-hero-pro.svg"
+                src="/cv/cv2.webp"
                 alt=""
                 className="w-24 md:w-32 lg:w-40 xl:w-48 h-auto rounded shadow"
               />
               <img
-                src="https://standout-cv.com/wp-content/uploads/2021/01/University-Applicant-CV-1.png"
+                src="/cv/cv3.webp"
                 alt=""
                 className="w-24 md:w-32 lg:w-40 xl:w-48 h-auto rounded shadow"
               />

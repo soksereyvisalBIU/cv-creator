@@ -25,51 +25,10 @@ function Template3(props) {
     return () => window.removeEventListener("resize", paperPreview);
   }, [paperPreview]);
 
-  // Export A4paper to PDF
-  const handleExportPDF = async () => {
-    const paper = document.getElementById("A4paper");
-    if (!paper) return;
-    const originalTransform = paper.style.transform;
-    const originalTransformOrigin = paper.style.transformOrigin;
-    paper.style.transform = `scale(1.5)`;
-    paper.style.transformOrigin = "top left";
-    // Use html2canvas to capture the A4paper
-    const canvas = await html2canvas(paper, {
-      scale: 1.5,
-      useCORS: true,
-      backgroundColor: null,
-      logging: false,
-      windowWidth: paper.scrollWidth,
-      windowHeight: paper.scrollHeight,
-    });
-    // Restore original transform
-    paper.style.transform = originalTransform;
-    paper.style.transformOrigin = originalTransformOrigin;
-    const imgData = canvas.toDataURL("image/png");
-    const pdf = new jsPDF({
-      orientation: "portrait",
-      unit: "mm",
-      format: "a4",
-    });
-    const pageWidth = 210;
-    const pageHeight = 297;
-    pdf.addImage(imgData, "PNG", 0, 0, pageWidth, pageHeight);
-    pdf.save("cv.pdf");
-  };
-
-  console.log(props);
+  // console.log(props);
 
   return (
     <div>
-      {/* Export to PDF Button */}
-      <div className="flex justify-end mb-4">
-        <button
-          onClick={handleExportPDF}
-          className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-900 transition"
-        >
-          Export to PDF
-        </button>
-      </div>
       {/* A4 preview section */}
       <div
         id="previewContainer"
